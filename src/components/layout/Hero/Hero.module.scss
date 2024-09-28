@@ -1,0 +1,53 @@
+@import "/src/App.scss";
+
+.hero {
+    background-color: #e2e8f0;
+    padding: 22px 0;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;   
+    }
+}
+
+.box {
+    max-width: 590px;
+    margin-bottom: 30px;
+
+    h1 {
+        font-weight: 700;
+        // font-size: 48px;
+        font-size: clamp(2.25rem, 2.016rem + 0.98vw, 3rem);
+        line-height: 1.2;
+
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        padding-left: 25px;
+
+        li {
+            list-style: disc;
+            color: $colorText;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    }
+}
+
+
+.img {
+    width: 100%;
+}

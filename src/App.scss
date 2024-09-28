@@ -1,0 +1,32 @@
+// VARS
+$fontMain: system-ui, sans-serif;
+$fontSecond: "Arial", sans-serif;
+
+$colorText: #73818e;
+$colorText2: #1f2a37;
+
+$mainColor: #57bfc1;
+
+body {
+    font-family: $fontMain !important;
+    background-color: #fff !important;
+    color: $colorText2 !important;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}

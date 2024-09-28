@@ -1,0 +1,35 @@
+.btn {
+    width: max-content;
+    padding: 18px 24px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+    color: #fff !important;
+    flex-direction: row !important;
+    background-color: #57bfc1;
+    border-radius: 15px;
+
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #308284;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        white-space: nowrap;
+    }
+}
+
+.btn_solid {
+    background-color: #fff !important;
+    border: 1px solid #d1d5db !important;
+    color: #000 !important;
+
+    &:hover {
+        background-color: #d1d5db;
+    }
+}

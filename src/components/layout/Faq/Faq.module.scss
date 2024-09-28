@@ -1,0 +1,67 @@
+.faq {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.title {
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 50px;
+}
+
+.item {
+    border: 1px solid #d1d5db;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 0;
+
+    &:has(.open) {
+        .item_arrow {
+            rotate: -180deg;
+        }
+    }
+}
+
+.item_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 12px 30px;
+    padding-top: 12px;
+
+    h3 {
+        font-weight: 700;
+        line-height: 1.2;
+
+    }
+}
+
+.item_arrow {
+    transition: 0.3s;
+}
+
+.item_box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+
+    &.open {
+        max-height: 200px;
+    }
+
+    p {
+        line-height: 1.4;
+
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+}

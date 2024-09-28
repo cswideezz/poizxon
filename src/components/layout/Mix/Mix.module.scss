@@ -1,0 +1,132 @@
+@import "/src/App.scss";
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+    gap: 20px;
+    
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        // font-size: 40px;
+        font-size: clamp(1.875rem, 1.68rem + 0.82vw, 2.5rem);
+
+        font-weight: 500;
+        line-height: 1.2;
+        color: $colorText2;
+
+        span {
+            color: $colorText;
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-left: auto;
+
+    button {
+        width: 48px;
+        height: 48px;
+        box-shadow: 0px 0px 4.7px 0px #1a2b3b26;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #ffffff;
+
+        transition: all 0.3s;
+
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0px 0px 12px 0px #1a2b3b3d;
+            }
+        }
+    }
+}
+
+.wrap {
+    margin-left: 90px;
+
+    @media (max-width: 1200px) {
+        margin-left: 25px;
+    }
+    @media (max-width: 480px) {
+        margin: 0 25px;
+    }
+}
+
+.card {
+    background-color: #f1f5f9;
+    padding: 26px;
+    border-radius: 25px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+
+        img {
+            display: none;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+
+            span {
+                display: none;
+
+                @media (max-width: 480px) {
+                    display: inline-block;
+                }
+            }
+        }
+        p {
+            color: $colorText;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        a {
+            background-color: #fff;
+            border-radius: 100px;
+            color: $colorText2;
+            padding: 16px 27px;
+            font-weight: 500;
+            box-shadow: 0px 0px 3px 0px #1a2b3b26;
+
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: $colorText2;
+                color: #fff;
+            }
+        }
+    }
+}
